@@ -1,0 +1,94 @@
+.payfeed {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background: #F2F2F2;
+
+    &__text {
+        margin-top: 30px;
+        text-align: center;
+    }
+
+    &__algo {
+        margin-top: 92px;
+
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__circle {
+        width: 245px;
+        height: 245px;
+
+        border-radius: 100%;
+        border: 3px solid #49D6DF;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 18px;
+
+        font-weight: 900;
+        font-size: 20px;
+        line-height: 23px;
+        text-align: center;
+        color: #4F4F4F;
+    }
+
+    &__btn {
+        margin: 60px auto 0;
+    }
+}
+
+@media screen and (max-width: 1350px) {
+    .payfeed {
+        &__arrow {
+            width: 48px;
+        }
+    }
+}
+
+@media screen and (max-width: 1040px) {
+    .payfeed {
+        &__algo {
+            flex-direction: column;
+        }
+        &__arrow {
+            height: 48px;
+
+            transform: rotateZ(90deg);
+        }
+    }
+}
+
+@media screen and (max-width: 760px) {
+    .payfeed {
+        &__algo {
+            margin-top: 50px;
+        }
+        &__arrow {
+            width: 40px;
+            transform: rotateZ(90deg) scaleY(1.6);
+        }
+    }
+}
+
+@media screen and (max-width: 530px) {
+    .payfeed {
+        padding-top: 50px;
+        padding-bottom: 50px;
+        &__text {
+            font-size: 14px;
+            line-height: 16px;
+        }
+        &__circle {
+            height: 200px;
+            width: 200px;
+
+            font-size: 18px;
+            line-height: 20px;
+        }
+    }
+}

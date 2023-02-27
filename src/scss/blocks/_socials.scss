@@ -1,0 +1,21 @@
+.socials {
+    display: flex;
+
+    &_promo {
+        flex-direction: column;
+        justify-content: center;
+        gap: 15px;
+    }
+    
+    &__svg {
+        path {
+            transition: all 0.2s;
+        }
+
+        &:hover {
+            path {
+                fill: #000;
+            }
+        }
+    }
+}

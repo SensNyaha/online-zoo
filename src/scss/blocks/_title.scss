@@ -1,0 +1,19 @@
+.title {
+    font-weight: 900;
+    font-size: 48px;
+    line-height: 56px;
+
+    color: #333333;
+    text-align: center;
+
+    &_tal {
+        text-align: left;
+    }
+}
+
+@media screen and (max-width: 530px) {
+    .title {
+        font-size: 36px;
+        line-height: 42px;
+    }
+}
